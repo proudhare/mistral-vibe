@@ -21,7 +21,7 @@ class OnboardingApp(App[str | None]):
         self._entrypoint_metadata = entrypoint_metadata
 
     def on_mount(self) -> None:
-        self.theme = "textual-ansi"
+        self.theme = "textual-dark"
 
         self.install_screen(WelcomeScreen(), "welcome")
         self.install_screen(
